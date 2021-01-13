@@ -1,0 +1,72 @@
+body {
+    margin: 20px;
+    padding: 0;
+    background: #333;
+}
+
+.container {
+    
+    max-width: 800px;
+    
+    margin: auto;
+    border: #fff solid 3px;
+    background: #fff;
+}
+
+
+
+.main-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+ 
+}
+
+.main-image {
+    height: 80vh;
+    width: 100%;
+    margin: auto;
+}
+
+.main-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+    
+}
+
+
+.imgs {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 5px;
+}
+
+.image-fig {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    
+}
+
+.image-fig img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Fade in animation*/
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+
